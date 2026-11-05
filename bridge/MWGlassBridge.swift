@@ -26,7 +26,23 @@ public struct MWGlassCapsule: View {
     }
 
     public var body: some View {
-        Color.clear.glassEffect(material == 1 ? .clear : .regular, in: Capsule())
+        // Plove's traced Body type is
+        // _ConditionalContent<ModifiedContent<Color,
+        // glassEffect>, ModifiedContent<Color,
+        // glassEffect>> — a ViewBuilder if/else with
+        // one glassEffect branch per material, NOT a
+        // conditional Glass value inside one modifier
+        // (GLASS-SWIFT-SPEC SS1). The two shapes take
+        // different view-graph paths; v90's device
+        // round hung at the hosted view's first
+        // layout/render with the value-conditional
+        // shape, so the body now matches the traced
+        // original exactly.
+        if material == 1 {
+            Color.clear.glassEffect(.clear, in: Capsule())
+        } else {
+            Color.clear.glassEffect(.regular, in: Capsule())
+        }
     }
 }
 
