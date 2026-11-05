@@ -1,1 +1,98 @@
-Ly8gTVdHbGFzc0JyaWRnZS5zd2lmdCDigJQgTWluaVdpbiBsaXF1aWQtZ2xhc3MgU3dpZnQgYnJpZGdlLgovLwovLyBCdWlsdCBvbiBhIGNsb3VkIE1hYyAoR2l0SHViIEFjdGlvbnMsIE13TGlxdWlkRHVjayByZXBvKQovLyBiZWNhdXNlIHRoZSBMaW51eCBidWlsZCBWTSBoYXMgbm8gU3dpZnQgdG9vbGNoYWluLiBUaGUKLy8gcHJvZHVjdCBpcyBsaWJNV0dsYXNzQnJpZGdlLmEgKGFybTY0LCBpT1MpLCBsaW5rZWQgaW50bwovLyBNaW5pV2luQ21wLmR5bGliOyB0aGUgZGV2aWNlIHN1cHBsaWVzIHRoZSBTd2lmdC9Td2lmdFVJCi8vIHJ1bnRpbWUuCi8vCi8vIFRoZSBzaGFwZSBtaXJyb3JzIFBsb3ZlJ3MgdHJhY2VkIFN3aWZ0IHNpZGUKLy8gKEdMQVNTLVNXSUZULVNQRUMpOiB0aGUgY2Fwc3VsZSB2aWV3J3MgYm9keSBpcyBPTkxZCi8vIENvbG9yLmNsZWFyLmdsYXNzRWZmZWN0IOKAlCBib2R5IG1hdGVyaWFsIC5yZWd1bGFyICgyKSwKLy8gc2VsZWN0aW9uLWxlbnMgbWF0ZXJpYWwgLmNsZWFyICgxKSDigJQgaW4gYSBDYXBzdWxlOyBubwovLyBnbGFzc0VmZmVjdElELCBubyAuaW50ZXJhY3RpdmUoKSwgbm8gY29udGFpbmVyLCBubwovLyBleHRyYSBtb2RpZmllcnMuIEJvZHkgYW5kIGxlbnMgYXJlIHNlcGFyYXRlIGluc3RhbmNlcy4KaW1wb3J0IFN3aWZ0VUkKaW1wb3J0IFVJS2l0CgpwdWJsaWMgc3RydWN0IE1XR2xhc3NDYXBzdWxlOiBWaWV3IHsKICAgIC8vIEZpeGVkIGF0IGNyZWF0aW9uIChQbG92ZSdzIGBsZXRgKTogMSA9IC5jbGVhciAocHVyZSAvCiAgICAvLyBsZW5zKSwgMiA9IC5yZWd1bGFyIChib2R5KS4gQ2hhbmdpbmcgc3R5bGUgcmVidWlsZHMKICAgIC8vIHRoZSBob3N0ZWQgc3VyZmFjZSBmcm9tIHRoZSBPYmpDIHNpZGUuCiAgICBwdWJsaWMgbGV0IG1hdGVyaWFsOiBJbnQKCiAgICBwdWJsaWMgaW5pdChtYXRlcmlhbDogSW50KSB7CiAgICAgICAgc2VsZi5tYXRlcmlhbCA9IG1hdGVyaWFsCiAgICB9CgogICAgcHVibGljIHZhciBib2R5OiBzb21lIFZpZXcgewogICAgICAgIENvbG9yLmNsZWFyLmdsYXNzRWZmZWN0KG1hdGVyaWFsID09IDEgPyAuY2xlYXIgOiAucmVndWxhciwgaW46IENhcHN1bGUoKSkKICAgIH0KfQoKLy8gUGxvdmUncyBIb3N0ZWRHbGFzc1N1cmZhY2Ugc2hhcGU6IGEgcGxhaW4gVUlWaWV3IGhvbGRpbmcKLy8gYSBVSUhvc3RpbmdDb250cm9sbGVyIHdob3NlIHZpZXcgaXMgcGlubmVkIHRvIGFsbCBmb3VyCi8vIGVkZ2VzIGJ5IGNvbnN0cmFpbnRzOyBob3N0IGFuZCBob3N0aW5nIHZpZXcgYXJlIGNsZWFyCi8vIGFuZCBub24tb3BhcXVlOyB0aGUgaG9zdGluZyB2aWV3IHRha2VzIG5vIHRvdWNoZXM7IE5PCi8vIGNvbG91ci1zY2hlbWUgaW5qZWN0aW9uIGF0IGluaXQgKHRoYXQgaGFwcGVucyBvbmx5IGluCi8vIHNldFBsb3ZlRGFyazopLgpAb2JqYyhNV0hvc3RlZEdsYXNzU3VyZmFjZSkKcHVibGljIGNsYXNzIE1XSG9zdGVkR2xhc3NTdXJmYWNlOiBVSVZpZXcgewogICAgcHJpdmF0ZSBsZXQgb3JpZ2luYWxDb250ZW50OiBNV0dsYXNzQ2Fwc3VsZQogICAgcHJpdmF0ZSBsZXQgaG9zdGluZ0NvbnRyb2xsZXI6IFVJSG9zdGluZ0NvbnRyb2xsZXI8QW55Vmlldz4KICAgIHByaXZhdGUgdmFyIGxhc3RTY2hlbWU6IENvbG9yU2NoZW1lPwoKICAgIEBvYmpjIHB1YmxpYyBpbml0KG1hdGVyaWFsOiBJbnQpIHsKICAgICAgICBsZXQgY29udGVudCA9IE1XR2xhc3NDYXBzdWxlKG1hdGVyaWFsOiBtYXRlcmlhbCkKICAgICAgICBzZWxmLm9yaWdpbmFsQ29udGVudCA9IGNvbnRlbnQKICAgICAgICBzZWxmLmhvc3RpbmdDb250cm9sbGVyID0gVUlIb3N0aW5nQ29udHJvbGxlcihyb290VmlldzogQW55Vmlldyhjb250ZW50KSkKICAgICAgICBzdXBlci5pbml0KGZyYW1lOiAuemVybykKICAgICAgICBiYWNrZ3JvdW5kQ29sb3IgPSAuY2xlYXIKICAgICAgICBpc09wYXF1ZSA9IGZhbHNlCiAgICAgICAgbGV0IGh2ID0gaG9zdGluZ0NvbnRyb2xsZXIudmlldyEKICAgICAgICBodi50cmFuc2xhdGVzQXV0b3Jlc2l6aW5nTWFza0ludG9Db25zdHJhaW50cyA9IGZhbHNlCiAgICAgICAgaHYuYmFja2dyb3VuZENvbG9yID0gLmNsZWFyCiAgICAgICAgaHYuaXNPcGFxdWUgPSBmYWxzZQogICAgICAgIGh2LmlzVXNlckludGVyYWN0aW9uRW5hYmxlZCA9IGZhbHNlCiAgICAgICAgYWRkU3VidmlldyhodikKICAgICAgICBOU0xheW91dENvbnN0cmFpbnQuYWN0aXZhdGUoWwogICAgICAgICAgICBodi5sZWFkaW5nQW5jaG9yLmNvbnN0cmFpbnQoZXF1YWxUbzogbGVhZGluZ0FuY2hvciksCiAgICAgICAgICAgIGh2LnRvcEFuY2hvci5jb25zdHJhaW50KGVxdWFsVG86IHRvcEFuY2hvciksCiAgICAgICAgICAgIGh2LnRyYWlsaW5nQW5jaG9yLmNvbnN0cmFpbnQoZXF1YWxUbzogdHJhaWxpbmdBbmNob3IpLAogICAgICAgICAgICBodi5ib3R0b21BbmNob3IuY29uc3RyYWludChlcXVhbFRvOiBib3R0b21BbmNob3IpLAogICAgICAgIF0pCiAgICB9CgogICAgcmVxdWlyZWQgaW5pdD8oY29kZXI6IE5TQ29kZXIpIHsKICAgICAgICBmYXRhbEVycm9yKCJNV0hvc3RlZEdsYXNzU3VyZmFjZSBpcyBjcmVhdGVkIGluIGNvZGUgb25seSIpCiAgICB9CgogICAgLy8gUGxvdmUncyBzZXRQbG92ZURhcms6OiBzdG9yZSB0aGUgc2NoZW1lLCBSRUJVSUxEIHRoZQogICAgLy8gcm9vdCB2aWV3IHdpdGggdGhlIGNvbG91ci1zY2hlbWUgZW52aXJvbm1lbnQgYXBwbGllZAogICAgLy8gdG8gdGhlIG9yaWdpbmFsIGNvbnRlbnQsIHNldCB0aGUgaG9zdGluZyBjb250cm9sbGVyJ3MKICAgIC8vIG92ZXJyaWRlIHN0eWxlIChEYXJrID0gMiwgTGlnaHQgPSAxIGluIFVJS2l0IHRlcm1zKSwKICAgIC8vIGFuZCBhc2sgdGhlIGhvc3RpbmcgdmlldyB0byByZWxheW91dC4KICAgIEBvYmpjIHB1YmxpYyBmdW5jIHNldFBsb3ZlRGFyayhfIGRhcms6IEJvb2wpIHsKICAgICAgICBsZXQgc2NoZW1lOiBDb2xvclNjaGVtZSA9IGRhcmsgPyAuZGFyayA6IC5saWdodAogICAgICAgIGxhc3RTY2hlbWUgPSBzY2hlbWUKICAgICAgICBob3N0aW5nQ29udHJvbGxlci5yb290VmlldyA9CiAgICAgICAgICAgIEFueVZpZXcob3JpZ2luYWxDb250ZW50LmVudmlyb25tZW50KFwuY29sb3JTY2hlbWUsIHNjaGVtZSkpCiAgICAgICAgaG9zdGluZ0NvbnRyb2xsZXIub3ZlcnJpZGVVc2VySW50ZXJmYWNlU3R5bGUgPSBkYXJrID8gLmRhcmsgOiAubGlnaHQKICAgICAgICBob3N0aW5nQ29udHJvbGxlci52aWV3LnNldE5lZWRzTGF5b3V0KCkKICAgIH0KfQoKLy8gQ3JlYXRpb24gYnJpZGdlIChQbG92ZSdzIFBMU3dpZnROYXRpdmVHbGFzc0JyaWRnZS4KLy8gY3JlYXRlQ2Fwc3VsZVdpdGhNYXRlcmlhbDopOiBiZWxvdyBpT1MgMjYgcmV0dXJuIGFuCi8vIGVtcHR5IHBsYWNlaG9sZGVyIHZpZXc7IG9uIDI2KyB3cmFwIHRoZSBjYXBzdWxlIGluIHRoZQovLyBob3N0ZWQgc3VyZmFjZS4gVGhlIG1hdGVyaWFsIGludGVnZXIgcGFzc2VzIHRocm91Z2gKLy8gdmVyYmF0aW0g4oCUIHRoZSBPYmpDIEMgYnJpZGdlIG1hcHMgcHVyZUdsYXNzID8gMSA6IDIuCkBvYmpjKE1XR2xhc3NCcmlkZ2UpCnB1YmxpYyBjbGFzcyBNV0dsYXNzQnJpZGdlOiBOU09iamVjdCB7CiAgICBAb2JqYyBwdWJsaWMgc3RhdGljIGZ1bmMgY3JlYXRlQ2Fwc3VsZSh3aXRoTWF0ZXJpYWwgbWF0ZXJpYWw6IEludCkgLT4gVUlWaWV3IHsKICAgICAgICBndWFyZCAjYXZhaWxhYmxlKGlPUyAyNi4wLCAqKSBlbHNlIHsKICAgICAgICAgICAgcmV0dXJuIFVJVmlldyhmcmFtZTogLnplcm8pCiAgICAgICAgfQogICAgICAgIHJldHVybiBNV0hvc3RlZEdsYXNzU3VyZmFjZShtYXRlcmlhbDogbWF0ZXJpYWwpCiAgICB9Cn0K
+// MWGlassBridge.swift — MiniWin liquid-glass Swift bridge.
+//
+// Built on a cloud Mac (GitHub Actions, MwLiquidDuck repo)
+// because the Linux build VM has no Swift toolchain. The
+// product is libMWGlassBridge.a (arm64, iOS), linked into
+// MiniWinCmp.dylib; the device supplies the Swift/SwiftUI
+// runtime.
+//
+// The shape mirrors Plove's traced Swift side
+// (GLASS-SWIFT-SPEC): the capsule view's body is ONLY
+// Color.clear.glassEffect — body material .regular (2),
+// selection-lens material .clear (1) — in a Capsule; no
+// glassEffectID, no .interactive(), no container, no
+// extra modifiers. Body and lens are separate instances.
+import SwiftUI
+import UIKit
+
+public struct MWGlassCapsule: View {
+    // Fixed at creation (Plove's `let`): 1 = .clear (pure /
+    // lens), 2 = .regular (body). Changing style rebuilds
+    // the hosted surface from the ObjC side.
+    public let material: Int
+
+    public init(material: Int) {
+        self.material = material
+    }
+
+    public var body: some View {
+        Color.clear.glassEffect(material == 1 ? .clear : .regular, in: Capsule())
+    }
+}
+
+// Plove's HostedGlassSurface shape: a plain UIView holding
+// a UIHostingController whose view is pinned to all four
+// edges by constraints; host and hosting view are clear
+// and non-opaque; the hosting view takes no touches; NO
+// colour-scheme injection at init (that happens only in
+// setPloveDark:).
+@objc(MWHostedGlassSurface)
+public class MWHostedGlassSurface: UIView {
+    private let originalContent: MWGlassCapsule
+    private let hostingController: UIHostingController<AnyView>
+    private var lastScheme: ColorScheme?
+
+    @objc public init(material: Int) {
+        let content = MWGlassCapsule(material: material)
+        self.originalContent = content
+        self.hostingController = UIHostingController(rootView: AnyView(content))
+        super.init(frame: .zero)
+        backgroundColor = .clear
+        isOpaque = false
+        let hv = hostingController.view!
+        hv.translatesAutoresizingMaskIntoConstraints = false
+        hv.backgroundColor = .clear
+        hv.isOpaque = false
+        hv.isUserInteractionEnabled = false
+        addSubview(hv)
+        NSLayoutConstraint.activate([
+            hv.leadingAnchor.constraint(equalTo: leadingAnchor),
+            hv.topAnchor.constraint(equalTo: topAnchor),
+            hv.trailingAnchor.constraint(equalTo: trailingAnchor),
+            hv.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("MWHostedGlassSurface is created in code only")
+    }
+
+    // Plove's setPloveDark:: store the scheme, REBUILD the
+    // root view with the colour-scheme environment applied
+    // to the original content, set the hosting controller's
+    // override style (Dark = 2, Light = 1 in UIKit terms),
+    // and ask the hosting view to relayout.
+    @objc public func setPloveDark(_ dark: Bool) {
+        let scheme: ColorScheme = dark ? .dark : .light
+        lastScheme = scheme
+        hostingController.rootView =
+            AnyView(originalContent.environment(\.colorScheme, scheme))
+        hostingController.overrideUserInterfaceStyle = dark ? .dark : .light
+        hostingController.view.setNeedsLayout()
+    }
+}
+
+// Creation bridge (Plove's PLSwiftNativeGlassBridge.
+// createCapsuleWithMaterial:): below iOS 26 return an
+// empty placeholder view; on 26+ wrap the capsule in the
+// hosted surface. The material integer passes through
+// verbatim — the ObjC C bridge maps pureGlass ? 1 : 2.
+@objc(MWGlassBridge)
+public class MWGlassBridge: NSObject {
+    @objc public static func createCapsule(withMaterial material: Int) -> UIView {
+        guard #available(iOS 26.0, *) else {
+            return UIView(frame: .zero)
+        }
+        return MWHostedGlassSurface(material: material)
+    }
+}
