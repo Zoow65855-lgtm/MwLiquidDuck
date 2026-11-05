@@ -4,4 +4,4 @@ Target: arm64-apple-macosx15.0
 iphoneos sdk:
 26.2
 archive bytes:
-45240
+49880
