@@ -1,1 +1,71 @@
+name: build-glass-bridge
+
+# Cloud-Mac build of MiniWin's Swift liquid-glass bridge.
+# The Linux build VM has no Swift toolchain, so this
+# macOS runner compiles bridge/MWGlassBridge.swift into
+# libMWGlassBridge.a (arm64, iOS 26 target) and commits
+# the product back under dist/ (base64 + sha256), where
+# the MiniWin build picks it up and links it into
+# MiniWinCmp.dylib.
+
+on:
+  push:
+    paths:
+      - "bridge/**"
+      - ".github/workflows/build-glass-bridge.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select newest Xcode (needs the iOS 26 SDK)
+        run: |
+          ls /Applications | grep -i xcode || true
+          NEWEST=$(ls -d /Applications/Xcode_*.app 2>/dev/null | sort -V | tail -n 1)
+          if [ -n "$NEWEST" ]; then
+            echo "selecting $NEWEST"
+            sudo xcode-select -s "$NEWEST"
+          fi
+          swiftc --version
+          xcrun --sdk iphoneos --show-sdk-version
+          xcrun --sdk iphoneos --show-sdk-path
+
+      - name: Build the bridge archive
+        run: |
+          set -e
+          cd bridge
+          SDK=$(xcrun --sdk iphoneos --show-sdk-path)
+          swiftc -emit-object -O \
+            -target arm64-apple-ios26.0 \
+            -sdk "$SDK" \
+            -module-name MWGlassBridge \
+            MWGlassBridge.swift -o MWGlassBridge.o
+          ar rcs libMWGlassBridge.a MWGlassBridge.o
+          mkdir -p ../dist
+          base64 -i libMWGlassBridge.a -o ../dist/libMWGlassBridge.a.b64
+          shasum -a 256 libMWGlassBridge.a | awk '{print $1}' > ../dist/libMWGlassBridge.a.sha256
+          {
+            echo "swiftc:"; swiftc --version
+            echo "iphoneos sdk:"; xcrun --sdk iphoneos --show-sdk-version
+            echo "archive bytes:"; stat -f %z libMWGlassBridge.a
+          } > ../dist/build-info.txt
+          cat ../dist/build-info.txt
+
+      - name: Commit the built archive back
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist
+          if git diff --cached --quiet; then
+            echo "no artifact change"
+          else
+            git commit -m "cloud-mac: built libMWGlassBridge.a"
+            git push
+          fi
 
